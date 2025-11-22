@@ -14,5 +14,6 @@ RUN curl -fsSL https://deno.land/install.sh | sh
 # 5. Vraćamo se na običnog korisnika (Jupyter pravila)
 USER ${NB_UID}
 
+
 # 6. Instaliramo Deno kernel da ga Jupyter vidi
 RUN deno jupyter --unstable --install
